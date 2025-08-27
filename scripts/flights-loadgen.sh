@@ -10,7 +10,7 @@
 # ./flights-loadgen.sh
 #
 # Specify a 25% error rate, 30 sec duration, and base URL:
-# ./flights-loadgen.sh -e 0.25 -d 30 -b http://localhost:5001
+# ./flights-loadgen.sh -e 0.25 -d 30 -b http://localhost:5003
 #
 # Run help command to see details and usage options:
 # ./flights-loadgen.sh -h
@@ -19,7 +19,7 @@ LINE_SEPARATOR="----------------------------------------------------------"
 
 DEFAULT_ERROR_RATE=0
 DEFAULT_DURATION=60
-DEFAULT_BASE_URL="http://localhost:5001"
+DEFAULT_BASE_URL="http://localhost:5003"
 
 BASIC_GET_ENDPOINTS=(
     "/"

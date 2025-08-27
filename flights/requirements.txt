@@ -1,3 +1,14 @@
+# App deps
 Flask==3.0.3
 flasgger==0.9.7.1
 Flask-Cors==5.0.0
+
+# OpenTelemetry base
+opentelemetry-distro
+opentelemetry-exporter-otlp
+
+# OTel instrumentations (explicit instead of relying on bootstrap)
+opentelemetry-instrumentation-flask
+opentelemetry-instrumentation-requests
+opentelemetry-instrumentation-urllib3
+opentelemetry-instrumentation-logging

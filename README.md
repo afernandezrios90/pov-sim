@@ -20,7 +20,7 @@ This application comprises the following services:
 | Name | Description | Tech | Quick Link |
 | :---: | :---: | :---: | :---: |
 | `airlines` | Backend service | Java Spring Boot app | http://localhost:8080/swagger-ui/index.html#/ |
-| `flights` | Backend service | Python Flask app | http://localhost:5001/apidocs/ |
+| `flights` | Backend service | Python Flask app | http://localhost:5003/apidocs/ |
 | `frontend` | Frontend service | React app | http://localhost:3000/ |
 |||
 
@@ -45,7 +45,7 @@ make up
 ```
 
 - *The `airlines` service will run on http://localhost:8080/ with Swagger doc UI at http://localhost:8080/swagger-ui/index.html#/*
-- *The `flights` service will run on http://localhost:5001/ with Swagger doc UI at http://localhost:5001/apidocs/*
+- *The `flights` service will run on http://localhost:5003/ with Swagger doc UI at http://localhost:5003/apidocs/*
 - *The `frontend` service will run on http://localhost:3000/*
 
 Stop the services with the following command:
@@ -98,7 +98,7 @@ Run the app
 ```
 make run
 ```
-*The `flights` service will run on http://localhost:5001/ with Swagger doc UI at http://localhost:5001/apidocs/*
+*The `flights` service will run on http://localhost:5003/ with Swagger doc UI at http://localhost:5003/apidocs/*
 
 Alternatively, use a single command to both build and run the app
 ```

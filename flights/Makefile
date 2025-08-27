@@ -1,5 +1,5 @@
 APP_NAME = flights
-PORT = 5001
+PORT = 5003
 
 build:	
 	docker build -t $(APP_NAME) .	

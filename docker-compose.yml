@@ -1,20 +1,31 @@
-version: '1'
 services:
   airlines:
-    build: 
+    build:
       context: ./airlines
     ports:
       - "8080:8080"
+    networks:
+      - observability
+
   flights:
-    build: 
+    build:
       context: ./flights
     ports:
-      - "5001:5001"
+      - "5003:5003"
+    networks:
+      - observability
+
   frontend:
-    build: 
+    build:
       context: ./frontend
     ports:
       - "3000:3000"
+    networks:
+      - observability
     volumes:
       - ./frontend:/app
       - /app/node_modules
+
+networks:
+  observability:
+    external: true

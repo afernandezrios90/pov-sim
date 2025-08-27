@@ -85,4 +85,5 @@ def book_flight():
     return jsonify({"passenger_name": passenger_name, "flight_num": flight_num, "booking_id": booking_id}), 200
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    # IMPORTANT: no debug, no reloader -> the OTel launcher wraps the actual server process
+    app.run(host="0.0.0.0", port=5003, debug=False, use_reloader=False)
